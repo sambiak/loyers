@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Globe } from "./globe";
 
 
 export interface Gps {
@@ -43,6 +44,7 @@ export interface Properties {
 export function Adresse(props: any) {
   const [name, setName] = useState("");
   const [cordonnés, setCord] = useState("");
+  const [addresse, setAdresse] = useState("");
 
   const handleSubmit = (evt: any) => {
     evt.preventDefault();
@@ -53,12 +55,14 @@ export function Adresse(props: any) {
       .then((data:Gps) => {
         console.log(data);
         setCord(data.features[0].geometry.coordinates.toString());
+        
 
     });
   };
   return (
       
     <form onSubmit={handleSubmit}>
+        <Globe></Globe>
         <p>
           Vos coordonées : {cordonnés}
       </p>
