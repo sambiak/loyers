@@ -12,8 +12,8 @@ export function Globe(props: any) {
       height = +svg.attr("height");
     const projection = d3
       .geoMercator()
-      .center([2, 47]) // GPS of location to zoom on
-      .scale(980) // This is like the zoom
+      .center([2.3522, 48.8566]) // GPS of location to zoom on
+      .scale(50000) // This is like the zoom
       .translate([width / 2, height / 2]);
     d3.json(
       "quartier_paris.geojson"
