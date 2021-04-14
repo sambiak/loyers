@@ -1730,7 +1730,7 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
-"@types/d3-array@*":
+"@types/d3-array@*", "@types/d3-array@^2.9.0":
   "integrity" "sha512-sdBMGfNvLUkBypPMEhOcKcblTQfgHbqbYrUqRE31jOwdDHBJBxz4co2MDAq93S4Cp++phk4UiwoEg/1hK3xXAQ=="
   "resolved" "https://registry.npmjs.org/@types/d3-array/-/d3-array-2.9.0.tgz"
   "version" "2.9.0"
@@ -4205,7 +4205,7 @@
     "es5-ext" "^0.10.50"
     "type" "^1.0.1"
 
-"d3-array@^2.3.0", "d3-array@>=2.5", "d3-array@1 - 2", "d3-array@2":
+"d3-array@^2.12.1", "d3-array@^2.3.0", "d3-array@>=2.5", "d3-array@1 - 2", "d3-array@2":
   "integrity" "sha512-B0ErZK/66mHtEsR1TkPEEkwdy+WDesimkM5gpZr5Dsg54BiTA5RXtYW5qTLIAcekaS9xfZrzBLF/OAkB3Qn1YQ=="
   "resolved" "https://registry.npmjs.org/d3-array/-/d3-array-2.12.1.tgz"
   "version" "2.12.1"
