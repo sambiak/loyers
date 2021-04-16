@@ -14,23 +14,42 @@ function App() {
   const [piece, setPiece] = useState<string>("");
   const [annee, setAnnee] = useState<string>("");
   const [mobilier, setMobilier] = useState<string>("");
+  const [secteur, setSecteur] = useState<number | null>(null);
 
   useEffect(() => {
     d3.dsv(";", "loyersdereferencemeuble.csv").then((data) => {
-      
       setMeublé(data);
-      console.log("meublé:", meublé, data);
-
+      console.log("meublé:", data);
     });
   }, []);
 
   return (
     <div className="App">
-      <Adresse></Adresse>
+      <Adresse secteur={secteur} setSecteur={setSecteur} />
       <Entree_surface surface={surface} setSurface={setSurface} />
       <Entree_piece piece={piece} setPiece={setPiece} />
       <Entree_annee annee={annee} setAnnee={setAnnee} />
       <Entree_mobilier mobilier={mobilier} setMobilier={setMobilier} />
+      <table>
+        <tbody>
+          <tr>
+            <th>Secteur géographique</th>
+            <th>Loyer de référence</th>
+          </tr>
+
+          {meublé &&
+            meublé
+              .filter(
+                (d) => parseInt(d["Secteur géographique"]!, 10) === secteur
+              )
+              .map((d,i) => (
+                <tr key={i}>
+                  <td>{d["Secteur géographique"]}</td>
+                  <td>{d["Loyer de référence"]}</td>
+                </tr>
+              ))}
+        </tbody>
+      </table>
     </div>
   );
 }

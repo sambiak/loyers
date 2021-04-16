@@ -41,7 +41,12 @@ export interface Properties {
   street?: string;
 }
 
-export function Adresse(props: any) {
+interface Props{
+  secteur:number|null
+  setSecteur:React.Dispatch<React.SetStateAction<number | null>>
+}
+
+export function Adresse(props: Props) {
   const [name, setName] = useState("");
   const [cordonnés, setCord] = useState<[number, number] | null>(null);
   const [carte, setCarte] = useState<CartesArrondissement | null>(null);
@@ -49,7 +54,6 @@ export function Adresse(props: any) {
   const [quartiers, setQuartiers] = useState<Record<number, number> | null>(
     null
   );
-  const [secteur, setSecteur] = useState<number | null>(null);
 
   useEffect(() => {
     fetch("quartier_paris.geojson")
@@ -78,9 +82,9 @@ export function Adresse(props: any) {
   useEffect(() => {
     console.log("dom modified", quartier, quartiers);
     if (quartier && quartiers) {
-      setSecteur(quartiers[quartier]);
+      props.setSecteur(quartiers[quartier]);
     }
-  }, [quartiers, quartier]);
+  }, [quartiers, quartier, props]);
 
   const handleSubmit = (evt: any) => {
     evt.preventDefault();
@@ -97,7 +101,7 @@ export function Adresse(props: any) {
       
       <p>Vos coordonées : {cordonnés}</p>
       <p>Votre Arrondissement administratif : {quartier}</p>
-      <p>Votre secteur : {secteur}</p>
+      <p>Votre secteur : {props.secteur}</p>
       <label>
         Adresse:
         <input
