@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Adresse } from "./Adresse";
@@ -13,6 +13,11 @@ function App() {
   const [piece, setPiece] = useState<string>("");
   const [annee, setAnnee] = useState<string>("");
   const [mobilier, setMobilier] = useState<string>("");
+
+
+  useEffect(() => {
+    
+  }, [])
 
 
   return (
