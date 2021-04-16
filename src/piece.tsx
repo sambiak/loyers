@@ -12,7 +12,7 @@ interface props {
         <option value="1">1 pièce</option>
         <option value="2">2 pièces</option>
         <option value="3">3 pièces</option>
-        <option value="4+">4 pièces et +</option>
+        <option value="4 et +">4 pièces et +</option>
       </select>
       <label>{props.piece}</label>
 
