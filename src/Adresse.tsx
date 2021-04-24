@@ -88,7 +88,7 @@ export function Adresse(props: Props) {
 
   const handleSubmit = (evt: any) => {
     evt.preventDefault();
-    let requete = `https://api-adresse.data.gouv.fr/search/?q=${name}`;
+    let requete = `https://api-adresse.data.gouv.fr/search/?q=${name + "Paris"}`;
     fetch(requete)
       .then((response) => response.json())
       .then((data: Gps) => {
@@ -109,6 +109,8 @@ export function Adresse(props: Props) {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+
+
       </label>
       <input type="submit" value="Submit" />
       <Globe
