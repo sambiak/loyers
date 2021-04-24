@@ -65,6 +65,7 @@ function App() {
         surface={surface}
         données_meublé={données_meublé}
         données_non_meublé={données_non_meublé}
+        montant = {montant}
       ></Resultat>
       <Adresse secteur={secteur} setSecteur={setSecteur} />
     </div>
