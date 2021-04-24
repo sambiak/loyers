@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
 import d3 from "./assets/d3";
 import "./App.css";
 import { Adresse } from "./Adresse";
@@ -7,9 +6,11 @@ import { Entree_surface } from "./surface";
 import { Entree_piece } from "./piece";
 import { Entree_annee } from "./annee";
 import { Entree_mobilier } from "./mobilier";
+import { Resultat } from "./resultat";
 
 function App() {
-  const [meublé, setMeublé] = useState<d3.DSVRowArray<string> | null>(null);
+  const [données_meublé, setMeublé] = useState<d3.DSVRowArray<string> | null>(null);
+  const [données_non_meublé, setNonMeublé] = useState<d3.DSVRowArray<string> | null>(null);
   const [surface, setSurface] = useState<number>(0);
   const [piece, setPiece] = useState<string>("");
   const [annee, setAnnee] = useState<string>("");
@@ -19,7 +20,12 @@ function App() {
   useEffect(() => {
     d3.dsv(";", "loyersdereferencemeuble.csv").then((data) => {
       setMeublé(data);
-      console.log("meublé:", data);
+    });
+  }, []);
+
+  useEffect(() => {
+    d3.dsv(";", "loyersdereferencenonmeuble.csv").then((data) => {
+      setNonMeublé(data);
     });
   }, []);
 
@@ -30,26 +36,15 @@ function App() {
       <Entree_piece piece={piece} setPiece={setPiece} />
       <Entree_annee annee={annee} setAnnee={setAnnee} />
       <Entree_mobilier mobilier={mobilier} setMobilier={setMobilier} />
-      <table>
-        <tbody>
-          <tr>
-            <th>Secteur géographique</th>
-            <th>Loyer de référence</th>
-          </tr>
-
-          {meublé &&
-            meublé
-              .filter(
-                (d) => parseInt(d["Secteur géographique"]!, 10) === secteur
-              )
-              .map((d,i) => (
-                <tr key={i}>
-                  <td>{d["Secteur géographique"]}</td>
-                  <td>{d["Loyer de référence"]}</td>
-                </tr>
-              ))}
-        </tbody>
-      </table>
+      <Resultat 
+        mobilier={mobilier} 
+        annee={annee} 
+        piece={piece} 
+        secteur={secteur}
+        surface={surface}
+        données_meublé={données_meublé}
+        données_non_meublé={données_non_meublé}        
+        ></Resultat>
     </div>
   );
 }
