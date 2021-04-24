@@ -8,6 +8,7 @@ interface Props {
   surface: number | null;
   données_meublé: d3.DSVRowArray<string> | null;
   données_non_meublé: d3.DSVRowArray<string> | null;
+  montant : number | null;
 }
 
 export function Resultat(props: Props) {

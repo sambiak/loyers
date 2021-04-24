@@ -7,6 +7,7 @@ import { Entree_piece } from "./piece";
 import { Entree_annee } from "./annee";
 import { Entree_mobilier } from "./mobilier";
 import { Resultat } from "./resultat";
+import { Entree_montant } from "./montantloyer";
 
 function App() {
   const [données_meublé, setMeublé] = useState<d3.DSVRowArray<string> | null>(
@@ -21,6 +22,7 @@ function App() {
   const [annee, setAnnee] = useState<string>("");
   const [mobilier, setMobilier] = useState<string>("");
   const [secteur, setSecteur] = useState<number | null>(null);
+  const [montant, setMontant] = useState<number>(0); 
   let rempli =
     !données_meublé ||
     !données_non_meublé ||
@@ -48,6 +50,7 @@ function App() {
       <Entree_piece piece={piece} setPiece={setPiece} />
       <Entree_annee annee={annee} setAnnee={setAnnee} />
       <Entree_mobilier mobilier={mobilier} setMobilier={setMobilier} />
+      <Entree_montant montant={montant} setMontant={setMontant}/>
     </div>
   );
 
