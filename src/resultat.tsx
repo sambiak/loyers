@@ -11,7 +11,6 @@ interface Props {
 }
 
 export function Resultat(props: Props) {
-  console.log("bon ou est la couille", props);
   if (
     !props.données_meublé ||
     !props.données_non_meublé ||
@@ -21,7 +20,6 @@ export function Resultat(props: Props) {
     props.annee === "" ||
     props.mobilier === ""
   ) {
-    console.log("tu fais de la merde");
     return null;
   }
   if (props.mobilier === "meuble") {
