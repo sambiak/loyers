@@ -95,10 +95,6 @@ export function Adresse(props: Props) {
   };
   return (
     <form onSubmit={handleSubmit}>
-      
-      <p>Vos coordonées : {cordonnés}</p>
-      <p>Votre Arrondissement administratif : {quartier}</p>
-      <p>Votre secteur : {props.secteur}</p>
       <label>
         Adresse:
         <input
@@ -110,6 +106,9 @@ export function Adresse(props: Props) {
 
       </label>
       <input type="submit" value="Submit" />
+      <p>Vos coordonées : {cordonnés}</p>
+      <p>Votre Arrondissement administratif : {quartier}</p>
+      <p>Votre secteur : {props.secteur}</p>
       <Globe
         carte={carte}
         GPS={cordonnés}
