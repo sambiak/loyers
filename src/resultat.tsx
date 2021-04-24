@@ -36,6 +36,7 @@ export function Resultat(props: Props) {
           <td>{d["Secteur géographique"]}</td>
           <td>{d["Loyer de référence"]}</td>
           <td>{parseInt(d["Loyer de référence"]!, 10)*props.surface! }</td>
+          <td>{props.montant}</td>
         </tr>
       ));
     return (
@@ -45,6 +46,7 @@ export function Resultat(props: Props) {
             <th>Secteur géographique</th>
             <th>Loyer de référence</th>
             <th>Loyer calculé</th>
+            <th>Votre loyer</th>
           </tr>
           {tableau}
         </tbody>
@@ -63,6 +65,7 @@ export function Resultat(props: Props) {
           <td>{d["Secteur géographique"]}</td>
           <td>{d["Loyer de référence"]}</td>
           <td>{parseInt(d["Loyer de référence"]!, 10)*props.surface! }</td>
+          <td>{props.montant}</td>
         </tr>
       ));
     return (
@@ -72,6 +75,7 @@ export function Resultat(props: Props) {
             <th>Secteur géographique</th>
             <th>Loyer de référence</th>
             <th>Loyer calculé</th>
+            <th>Votre loyer</th>
           </tr>
           {tableau}
         </tbody>
