@@ -18,9 +18,9 @@ function App() {
     setNonMeublé,
   ] = useState<d3.DSVRowArray<string> | null>(null);
   const [surface, setSurface] = useState<number>(0);
-  const [piece, setPiece] = useState<string>("");
-  const [annee, setAnnee] = useState<string>("");
-  const [mobilier, setMobilier] = useState<string>("");
+  const [piece, setPiece] = useState<string>("1");
+  const [annee, setAnnee] = useState<string>("< 1946");
+  const [mobilier, setMobilier] = useState<string>("meuble");
   const [secteur, setSecteur] = useState<number | null>(null);
   const [montant, setMontant] = useState<number>(0); 
   let rempli =
