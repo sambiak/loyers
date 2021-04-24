@@ -1,7 +1,5 @@
 import d3 from "./assets/d3";
-import { useEffect, useRef, useState } from "react";
-import { GeoPath } from "d3-geo";
-import { threadId } from "node:worker_threads";
+import { useEffect, useRef } from "react";
 import { CartesArrondissement, Feature } from "./assets/carte";
 
 interface prop {
@@ -31,7 +29,6 @@ export function Globe(props: prop) {
       // Draw the map
       console.log(data.features);
       let geoPath = d3.geoPath().projection(projection);
-      const sphere = { type: "Sphere" };
       svg
         .append("g")
         .selectAll("path")
