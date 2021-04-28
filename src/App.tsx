@@ -57,6 +57,7 @@ function App() {
   return (
     <div className="App">
       {rempli && questions}
+      <Adresse secteur={secteur} setSecteur={setSecteur} />
       <Resultat
         mobilier={mobilier}
         annee={annee}
@@ -67,7 +68,7 @@ function App() {
         données_non_meublé={données_non_meublé}
         montant = {montant}
       ></Resultat>
-      <Adresse secteur={secteur} setSecteur={setSecteur} />
+      
     </div>
   );
 }

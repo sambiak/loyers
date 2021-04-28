@@ -70,14 +70,17 @@ export function Adresse(props: Props) {
         for (let entry of data) {
           let quartier = parseInt(entry["Quartier administratif"]!, 10);
           let secteur = parseInt(entry["Secteur géographique"]!, 10);
+          console.log(entry); // 1, "string", false
           map[quartier] = secteur;
         }
+        console.log(map);
         setQuartiers(map);
       })
       .catch((error) => console.log("erreur chargement", error));
   }, []);
 
   useEffect(() => {
+    console.log("dom modified", quartier, quartiers);
     if (quartier && quartiers) {
       props.setSecteur(quartiers[quartier]);
     }
@@ -95,6 +98,7 @@ export function Adresse(props: Props) {
   };
   return (
     <form onSubmit={handleSubmit}>
+      
       <label>
         Adresse:
         <input
@@ -106,9 +110,6 @@ export function Adresse(props: Props) {
 
       </label>
       <input type="submit" value="Submit" />
-      <p>Vos coordonées : {cordonnés}</p>
-      <p>Votre Arrondissement administratif : {quartier}</p>
-      <p>Votre secteur : {props.secteur}</p>
       <Globe
         carte={carte}
         GPS={cordonnés}

@@ -28,8 +28,40 @@ export function Resultat(props: Props) {
   }
 
   if (loyer && loyer < props.montant) {
-    alert("tu te fais arnaquer mon bouricot");
+    return (
+      <div className= "resultats">
+<p>
+  Tu t'es fait enculé par ton proprio
+</p>
+
+      </div>
+    );
   }
+  else if (loyer && loyer > props.montant) {
+    return(
+<div className= "resultats">
+  <p>
+    Ton proprio est clean
+  </p>
+
+        
+      </div>
+    );
+  } 
+  else if (loyer && loyer === props.montant) {
+    return (
+<div className= "resultats">
+  <p>
+    c'est pile poil mon coco
+  </p>
+
+        
+</div>
+    );
+
+  }
+
+
 
   if (props.mobilier === "meuble") {
     let tableau = props.données_meublé
