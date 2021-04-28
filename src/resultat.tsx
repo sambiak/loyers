@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import React, { useState } from "react";
 
 interface Props {
@@ -26,6 +27,9 @@ export function Resultat(props: Props) {
   ) {
     return null;
   }
+
+
+
 
   if (loyer && loyer < props.montant) {
     return (

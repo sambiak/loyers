@@ -97,8 +97,9 @@ export function Adresse(props: Props) {
       });
   };
   return (
+   
     <form onSubmit={handleSubmit}>
-      
+       <div className ="adresse">
       <label>
         Adresse:
         <input
@@ -106,9 +107,12 @@ export function Adresse(props: Props) {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+      
 
 
       </label>
+      </div>
+     
       <input type="submit" value="Submit" />
       <Globe
         carte={carte}

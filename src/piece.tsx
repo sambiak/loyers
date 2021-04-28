@@ -5,7 +5,7 @@ interface props {
 
   export function Entree_piece(props: props) {
     return (
-      <div> 
+      <div className = "piece"> 
       <label> Combien de pièces votre logement possède-t-il? </label>
       <select value={props.piece} onChange={(e) => props.setPiece(e.target.value )}>
         {" "}

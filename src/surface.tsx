@@ -5,7 +5,7 @@ interface props {
 
 export function Entree_surface(props: props) {
   return (
-    <div>
+    <div className = "surface"> 
       <label>La surface de votre logmement (en m²)</label>
       <input
         type="number"

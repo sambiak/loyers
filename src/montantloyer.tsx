@@ -5,7 +5,7 @@ interface props {
   
   export function Entree_montant(props: props) {
     return (
-      <div>
+      <div className = "loyer">
         <label>Montant de votre loyer actuel (Charges non comprises)</label>
         <input
           type="number"

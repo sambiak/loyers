@@ -5,7 +5,7 @@ interface props {
 
   export function Entree_mobilier(props: props) {
     return (
-      <div> 
+      <div className= "mobilier"> 
       <label> Votre logement a été loué : </label>
       <select value={props.mobilier} onChange={(e) => props.setMobilier(e.target.value )}>
         {" "}

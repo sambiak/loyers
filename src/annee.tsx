@@ -5,7 +5,7 @@ interface props {
 
   export function Entree_annee(props: props) {
     return (
-      <div> 
+      <div className= "annee"> 
       <label> A quelle période votre logement a-t-il été construit? </label>
       <select value={props.annee} onChange={(e) => props.setAnnee(e.target.value )}>
         {" "}
