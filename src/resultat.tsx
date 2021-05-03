@@ -34,8 +34,12 @@ export function Resultat(props: Props) {
   if (loyer && loyer < props.montant) {
     return (
       <div className= "resultats">
+<p>Loyer maximal autorisé: {loyer}euros </p>
+  <br>
+  </br>
 <p>
-  Tu t'es fait enculé par ton proprio
+  Votre propriétaire ne respecte pas l'encadrement des loyers 
+  (Insérer tuto ici)
 </p>
 
       </div>
@@ -44,9 +48,13 @@ export function Resultat(props: Props) {
   else if (loyer && loyer > props.montant) {
     return(
 <div className= "resultats">
+<p>Loyer maximal autorisé: {loyer}euros </p>
+  <br>
+  </br>
   <p>
-    Ton proprio est clean
+    Ton propriétaire respecte l'encadrement des loyers.
   </p>
+  
 
         
       </div>
@@ -55,9 +63,13 @@ export function Resultat(props: Props) {
   else if (loyer && loyer === props.montant) {
     return (
 <div className= "resultats">
+<p>Loyer maximal autorisé: {loyer}euros </p>
+  <br>
+  </br>
   <p>
-    c'est pile poil mon coco
+    Ton propriétaire respecte l'encadrement des loyers.
   </p>
+  
 
         
 </div>
