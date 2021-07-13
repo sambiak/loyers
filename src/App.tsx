@@ -8,6 +8,24 @@ import { Entree_annee } from "./annee";
 import { Entree_mobilier } from "./mobilier";
 import { Resultat } from "./resultat";
 import { Entree_montant } from "./montantloyer";
+import jsPDF from "jspdf";
+import ReactDOMServer from "react-dom/server";
+import Nom from "./exemple_pdf/fiche_nom";
+
+const télecharger = () => {
+  const doc = new jsPDF("p", "mm", "a4");
+  console.log(ReactDOMServer.renderToStaticMarkup(Nom()));
+  doc.html(ReactDOMServer.renderToStaticMarkup(Nom()), {
+    callback: function (doc) {
+      doc.save();
+    },
+    x: 10,
+    y: 10,
+    html2canvas: {
+      width: 10000,
+    },
+  });
+};
 
 function App() {
   const [données_meublé, setMeublé] = useState<d3.DSVRowArray<string> | null>(
@@ -68,6 +86,9 @@ function App() {
         données_non_meublé={données_non_meublé}
         montant = {montant}
       ></Resultat>
+      <button type="button" onClick={télecharger}>
+            Télécharger
+          </button>
       
     </div>
   );
