@@ -1,5 +1,23 @@
 import { render } from "@testing-library/react";
 import React, { useState } from "react";
+import jsPDF from "jspdf";
+import ReactDOMServer from "react-dom/server";
+import Nom from "./exemple_pdf/fiche_nom";
+
+const télecharger = () => {
+  const doc = new jsPDF("p", "mm", "a4");
+  console.log(ReactDOMServer.renderToStaticMarkup(Nom()));
+  doc.html(ReactDOMServer.renderToStaticMarkup(Nom()), {
+    callback: function (doc) {
+      doc.save();
+    },
+    x: 10,
+    y: 10,
+    html2canvas: {
+      width: 10000,
+    },
+  });
+};
 
 interface Props {
   mobilier: string;
@@ -41,7 +59,9 @@ export function Resultat(props: Props) {
   Votre propriétaire ne respecte pas l'encadrement des loyers 
   (Insérer tuto ici)
 </p>
-
+<button type="button" onClick={télecharger}>
+            Télécharger
+          </button>
       </div>
     );
   }
