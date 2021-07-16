@@ -9,7 +9,7 @@ const télecharger = () => {
   console.log(ReactDOMServer.renderToStaticMarkup(Nom()));
   doc.html(ReactDOMServer.renderToStaticMarkup(Nom()), {
     callback: function (doc) {
-      doc.save();
+      doc.save("monguideloyer.pdf");
     },
     x: 10,
     y: 10,
@@ -17,6 +17,7 @@ const télecharger = () => {
       width: 10000,
     },
   });
+  
 };
 
 interface Props {
@@ -56,11 +57,11 @@ export function Resultat(props: Props) {
   <br>
   </br>
 <p>
-  Votre propriétaire ne respecte pas l'encadrement des loyers 
-  (Insérer tuto ici)
+  Votre propriétaire ne respecte pas l'encadrement des loyers. Retrouvez notre guide pour faire respecter vos droits sur le bouton ci-dessous. 
+ 
 </p>
 <button type="button" onClick={télecharger}>
-            Télécharger
+            Votre guide
           </button>
       </div>
     );
