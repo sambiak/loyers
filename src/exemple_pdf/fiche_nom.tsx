@@ -11,16 +11,16 @@ function Nom() {
 <p>D&rsquo;abord, prenez contact avec votre propri&eacute;taire par <strong>Lettre recommand&eacute; avec avis de r&eacute;ception </strong>pour lui demander que figure sur votre bail le loyer de r&eacute;f&eacute;rence et le loyer de r&eacute;f&eacute;rence major&eacute; et donc n&eacute;gocier une baisse de votre loyer actuel pour qu&rsquo;il soit inf&eacute;rieur au loyer de r&eacute;f&eacute;rence major&eacute;.</p>
 <p>En cas de non-r&eacute;ponse ou de refus de votre propri&eacute;taire dans un d&eacute;lai d&rsquo;un mois, et pass&eacute; 3 mois apr&egrave;s la signature du bail (ou renouvellement de celui-ci), vous pouvez saisir la Commission d&eacute;partementale de conciliation.</p>
 <p>&nbsp;</p>
-<h2>2-&nbsp;&nbsp;&nbsp;&nbsp; Saisine de la Commission d&eacute;partementale des conciliations (CDC)</h2>
+<h2>2-&nbsp;&nbsp;&nbsp;&nbsp; Saisine  de la Commission  d&eacute;partementale des conciliations (CDC)</h2>
 <p>&nbsp;</p>
-<p>La saisine de la CDC est gratuite et obligatoire avant de porter l&rsquo;affaire devant les tribunaux dans le cadre du respect de l&rsquo;encadrement des loyers.</p>
+<p>La saisine de la CDC  est gratuite et obligatoire avant de porter l&rsquo;affaire devant les tribunaux dans le cadre du respect de l&rsquo;encadrement des loyers.</p>
 <p>Pour saisir la CDC, vous devez leur envoyer une <strong>Lettre recommand&eacute; avec avis de r&eacute;ception</strong> avec l&rsquo;objet du litige (non-respect de l&rsquo;encadrement des loyers) &agrave; l&rsquo;adresse suivante&nbsp;:</p>
 <p><strong>Commission d&eacute;partementale de conciliation, Direction r&eacute;gionale et interd&eacute;partementale de l&rsquo;h&eacute;bergement et du logement, Unit&eacute; d&eacute;partementale de Paris, 5 rue Leblanc, 75015 Paris</strong></p>
 <p>&nbsp;</p>
 <p>Ou par voie &eacute;lectronique &agrave; l&rsquo;adresse &eacute;lectronique suivante&nbsp;: <a href="mailto:cdc-paris.uthl75@developpement-durable.gouv.fr">cdc-paris.uthl75@developpement-durable.gouv.fr</a></p>
 <p>Vous trouverez en annexe un exemple-type de lettre de recommandation pour la saisine. <br />Avec la lettre de saisine vous sera &eacute;galement demand&eacute; de joindre une copie du contrat de location.</p>
 <p>&nbsp;</p>
-<h2>3-&nbsp;&nbsp;&nbsp;&nbsp; Saisine du juge</h2>
+<h2>3-&nbsp;&nbsp;&nbsp;&nbsp; Saisine  du juge</h2>
 <p>&nbsp;</p>
 <p>Si la conciliation &agrave; l&rsquo;amiable &eacute;choue devant la CDC, vous avez 3 mois &agrave; compter de l&rsquo;avis de la commission pour saisir le juge afin de demander la baisse de votre loyer. Vous pouvez prendre un avocat pour vous accompagner dans cette d&eacute;marche.</p>
 <h1>&nbsp;</h1>
