@@ -3,51 +3,49 @@ import "./fiche_nom.css";
 function Nom() {
   return (
     <div className="fiche">
-      <h2>Le Service de Sant&eacute; Universitaire</h2>
-      <h3>Pr&eacute;sentation :</h3>
-      <p>
-        Le Service de la Sant&eacute; Universitaire (SSU) est un service de
-        sant&eacute; proposant des consultations gratuites d&eacute;di&eacute;es
-        aux &eacute;tudiants de l'Universit&eacute; de Paris et de ses
-        partenaires. Notre &eacute;quipe pluridisciplinaire et dynamique est
-        &agrave; votre &eacute;coute pour vous proposer une offre de
-        pr&eacute;vention et de soin adapt&eacute;e.
-      </p>
-      <p>
-        Nous vous accueillons sur RDV pour votre visite de m&eacute;decine
-        pr&eacute;ventive mais aussi pour des consultations
-        gyn&eacute;cologiques, d&eacute;pistages bucco-dentaire, prises en
-        charge psychologiques, aide au sevrage tabagique, vaccinations,
-        nutrition, certificats d&rsquo;aptitude au sport ou de bonne
-        sant&eacute;, stages &agrave; l&rsquo;&eacute;tranger&hellip;
-      </p>
-      <p>
-        Les prestations de soin et prise en charge se font sur
-        pr&eacute;sentation de votre carte &eacute;tudiante, de votre carte
-        vitale &agrave; jour (ou son attestation) et de l&rsquo;attestation de
-        mutuelle si vous en disposez.
-      </p>
-      <h3>Contacts :</h3>
-      <p>Prise de rendez-vous via Doctolib</p>
-      <p>
-        <a href="https://www.doctolib.fr/etablissement-de-prevention/paris/siumpps-centres-descartes-diderot-sorbonne-nouvelle-dauphine-et-pantheon-sorbonne">
-          https://www.doctolib.fr/etablissement-de-prevention/paris/siumpps-centres-descartes-diderot-sorbonne-nouvelle-dauphine-et-pantheon-sorbonne
-        </a>
-      </p>
-      <h5>
-        <strong>Universit&eacute; de Paris</strong>{" "}
-      </h5>
-      <p>
-        <strong>Campus Saint-Germain</strong>
-      </p>
-      <p>1er &eacute;tage T145</p>
-      <p>45, rue des Saints-P&egrave;res &ndash; 75006 PARIS</p>
-      <p>T&eacute;l : 01 42 86 21 29</p>
-      <p>
-        <a href="mailto:accueil@siumpps.parisdescartes.fr">
-          accueil@siumpps.parisdescartes.fr
-        </a>
-      </p>
+<h1>Comment faire respecter l&rsquo;encadrement des loyers&nbsp;?</h1>
+<p>&nbsp;</p>
+<p>Votre propri&eacute;t&eacute; ne respecte pas l&rsquo;encadrement des loyers. Si vous n&rsquo;&ecirc;tes pas &agrave; moins de 5 mois de la fin de votre bail, il existe diff&eacute;rents recours pour faire baisser le loyer de votre logement et r&eacute;cup&eacute;rer r&eacute;troactivement le trop-vers&eacute; depuis le d&eacute;but de votre bail. Voici un guide &eacute;tape par &eacute;tape pour que vous puissiez faire valoir vos droits.</p>
+<h2>1-&nbsp;&nbsp;&nbsp;&nbsp; N&eacute;gociation &agrave; l&rsquo;amiable avec votre bailleur</h2>
+<p>&nbsp;</p>
+<p>D&rsquo;abord, prenez contact avec votre propri&eacute;taire par <strong>Lettre recommand&eacute; avec avis de r&eacute;ception </strong>pour lui demander que figure sur votre bail le loyer de r&eacute;f&eacute;rence et le loyer de r&eacute;f&eacute;rence major&eacute; et donc n&eacute;gocier une baisse de votre loyer actuel pour qu&rsquo;il soit inf&eacute;rieur au loyer de r&eacute;f&eacute;rence major&eacute;.</p>
+<p>En cas de non-r&eacute;ponse ou de refus de votre propri&eacute;taire dans un d&eacute;lai d&rsquo;un mois, et pass&eacute; 3 mois apr&egrave;s la signature du bail (ou renouvellement de celui-ci), vous pouvez saisir la Commission d&eacute;partementale de conciliation.</p>
+<p>&nbsp;</p>
+<h2>2-&nbsp;&nbsp;&nbsp;&nbsp; Saisine de la Commission d&eacute;partementale des conciliations (CDC)</h2>
+<p>&nbsp;</p>
+<p>La saisine de la CDC est gratuite et obligatoire avant de porter l&rsquo;affaire devant les tribunaux dans le cadre du respect de l&rsquo;encadrement des loyers.</p>
+<p>Pour saisir la CDC, vous devez leur envoyer une <strong>Lettre recommand&eacute; avec avis de r&eacute;ception</strong> avec l&rsquo;objet du litige (non-respect de l&rsquo;encadrement des loyers) &agrave; l&rsquo;adresse suivante&nbsp;:</p>
+<p><strong>Commission d&eacute;partementale de conciliation, Direction r&eacute;gionale et interd&eacute;partementale de l&rsquo;h&eacute;bergement et du logement, Unit&eacute; d&eacute;partementale de Paris, 5 rue Leblanc, 75015 Paris</strong></p>
+<p>&nbsp;</p>
+<p>Ou par voie &eacute;lectronique &agrave; l&rsquo;adresse &eacute;lectronique suivante&nbsp;: <a href="mailto:cdc-paris.uthl75@developpement-durable.gouv.fr">cdc-paris.uthl75@developpement-durable.gouv.fr</a></p>
+<p>Vous trouverez en annexe un exemple-type de lettre de recommandation pour la saisine. <br />Avec la lettre de saisine vous sera &eacute;galement demand&eacute; de joindre une copie du contrat de location.</p>
+<p>&nbsp;</p>
+<h2>3-&nbsp;&nbsp;&nbsp;&nbsp; Saisine du juge</h2>
+<p>&nbsp;</p>
+<p>Si la conciliation &agrave; l&rsquo;amiable &eacute;choue devant la CDC, vous avez 3 mois &agrave; compter de l&rsquo;avis de la commission pour saisir le juge afin de demander la baisse de votre loyer. Vous pouvez prendre un avocat pour vous accompagner dans cette d&eacute;marche.</p>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Exemple-type de lettre de recommandation&nbsp;:</strong></p>
+<p><em>&nbsp;</em></p>
+<p><em>Madame, Monsieur,</em></p>
+<p><em>&nbsp;</em></p>
+<p><em>Je suis locataire du logement sis (adresse) lou&eacute; en vertu d&rsquo;un contrat sign&eacute; le (date de signature). &Agrave; ce jour, je suis en d&eacute;saccord avec mon propri&eacute;taire pour les faits suivants : non-respect de l&rsquo;encadrement des loyers.</em></p>
+<p><em>&nbsp;</em></p>
+<p><em>Par cons&eacute;quent, j&rsquo;ai l&rsquo;honneur de vous demander de bien vouloir convoquer mon bailleur devant la commission de conciliation afin qu&rsquo;elle se r&eacute;unisse pour examiner ce litige et tenter de trouver un accord amiable.</em></p>
+<p><em>&nbsp;</em></p>
+<p><em>Pour ce faire, je vous communique les coordonn&eacute;es des parties :<br />&ndash; coordonn&eacute;es du bailleur (nom[s], pr&eacute;nom[s] et adresse) ;<br />&ndash; coordonn&eacute;es du locataire (nom[s], pr&eacute;nom[s] et adresse).</em></p>
+<p><em>&nbsp;</em></p>
+<p><em>Je joins &eacute;galement &agrave; la pr&eacute;sente les pi&egrave;ces justificatives n&eacute;cessaires &agrave; l&rsquo;examen du dossier et ce, en double exemplaire (copie du contrat de location, courriers, photos, constats&hellip;).</em></p>
+<p><em>&nbsp;</em></p>
+<p><em>Je reste &agrave; votre disposition si des informations compl&eacute;mentaires vous semblent n&eacute;cessaires.</em></p>
+<p><em>&nbsp;</em></p>
+<p><em>Dans l&rsquo;attente de votre convocation, je vous prie d&rsquo;agr&eacute;er, Madame, Monsieur, l&rsquo;expression de mes salutations distingu&eacute;es.</em></p>
+<p><em>&nbsp;</em></p>
+<p><em>(Signature)</em></p>
+<p><br />(Source&nbsp;: <a href="https://www.inc-conso.fr/content/en-litige-avec-votre-bailleur-vous-souhaitez-saisir-la-commission-departementale-de">https://www.inc-conso.fr/content/en-litige-avec-votre-bailleur-vous-souhaitez-saisir-la-commission-departementale-de</a> )</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
     </div>
   );
 }
