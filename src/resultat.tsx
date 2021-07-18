@@ -109,11 +109,11 @@ export function Resultat(props: Props) {
           d["Nombre de pièces"] === props.piece
       )
       .map((d, i) => {
-        setLoyer(parseInt(d["Loyer de référence"]!, 10) * props.surface!);
+        setLoyer(parseFloat(d["Loyer de référence majoré"]!) * props.surface!);
         return (
           <tr key={i}>
             <td>{d["Secteur géographique"]}</td>
-            <td>{d["Loyer de référence"]}</td>
+            <td>{d["Loyer de référence majoré"]}</td>
             <td>{loyer}</td>
             <td>{props.montant}</td>
           </tr>
@@ -141,11 +141,11 @@ export function Resultat(props: Props) {
           d["Nombre de pièces"] === props.piece
       )
       .map((d, i) => {
-        setLoyer(parseInt(d["Loyer de référence"]!, 10) * props.surface!);
+        setLoyer(parseFloat(d["Loyer de référence majoré"]!) * props.surface!);
         return (
           <tr key={i}>
             <td>{d["Secteur géographique"]}</td>
-            <td>{d["Loyer de référence"]}</td>
+            <td>{d["Loyer de référence majoré"]}</td>
             <td>{loyer}</td>
             <td>{props.montant}</td>
           </tr>
