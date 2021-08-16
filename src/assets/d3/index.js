@@ -1,16 +1,14 @@
-"use strict";
-exports.__esModule = true;
-var d3_geo_1 = require("d3-geo");
-var d3_1 = require("d3");
+import { geoEqualEarth, geoPath, geoContains } from "d3-geo";
+import { json, select, csv, tsv, dsv, geoMercator } from "d3";
 var d3 = {
-    geoEqualEarth: d3_geo_1.geoEqualEarth,
-    geoMercator: d3_1.geoMercator,
-    geoContains: d3_geo_1.geoContains,
-    geoPath: d3_geo_1.geoPath,
-    csv: d3_1.csv,
-    tsv: d3_1.tsv,
-    dsv: d3_1.dsv,
-    json: d3_1.json,
-    select: d3_1.select
+    geoEqualEarth: geoEqualEarth,
+    geoMercator: geoMercator,
+    geoContains: geoContains,
+    geoPath: geoPath,
+    csv: csv,
+    tsv: tsv,
+    dsv: dsv,
+    json: json,
+    select: select,
 };
-exports["default"] = d3;
+export default d3;
