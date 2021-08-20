@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import d3 from "./assets/d3";
 import "./App.css";
 import { Adresse } from "./Adresse";
-import { Entree_surface } from "./surface";
-import { Entree_piece } from "./piece";
-import { Entree_annee } from "./annee";
-import { Entree_mobilier } from "./mobilier";
+import { EntreeSurface } from "./surface";
+import { EntreePiece } from "./piece";
+import { EntreeAnnee } from "./annee";
+import { EntreeMobilier } from "./mobilier";
 import { Resultat } from "./resultat";
-import { Entree_montant } from "./montantloyer";
+import { EntreeMontant } from "./montantloyer";
 
 
 function App() {
@@ -47,11 +47,11 @@ function App() {
 
   let questions = (
     <div>
-      <Entree_surface surface={surface} setSurface={setSurface} />
-      <Entree_piece piece={piece} setPiece={setPiece} />
-      <Entree_annee annee={annee} setAnnee={setAnnee} />
-      <Entree_mobilier mobilier={mobilier} setMobilier={setMobilier} />
-      <Entree_montant montant={montant} setMontant={setMontant}/>
+      <EntreeSurface surface={surface} setSurface={setSurface} />
+      <EntreePiece piece={piece} setPiece={setPiece} />
+      <EntreeAnnee annee={annee} setAnnee={setAnnee} />
+      <EntreeMobilier mobilier={mobilier} setMobilier={setMobilier} />
+      <EntreeMontant montant={montant} setMontant={setMontant}/>
     </div>
   );
 

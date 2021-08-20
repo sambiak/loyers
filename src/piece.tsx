@@ -3,7 +3,7 @@ interface props {
     setPiece: React.Dispatch<React.SetStateAction<string>>;
   }
 
-  export function Entree_piece(props: props) {
+  export function EntreePiece(props: props) {
     return (
       <div className = "piece"> 
       <label> Combien de pièces votre logement possède-t-il? </label>

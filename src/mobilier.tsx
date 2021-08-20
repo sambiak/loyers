@@ -3,7 +3,7 @@ interface props {
     setMobilier: React.Dispatch<React.SetStateAction<string>>;
   }
 
-  export function Entree_mobilier(props: props) {
+  export function EntreeMobilier(props: props) {
     return (
       <div className= "mobilier"> 
       <label> Votre logement a été loué : </label>

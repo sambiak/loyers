@@ -3,7 +3,7 @@ interface props {
     setAnnee: React.Dispatch<React.SetStateAction<string>>;
   }
 
-  export function Entree_annee(props: props) {
+  export function EntreeAnnee(props: props) {
     return (
       <div className= "annee"> 
       <label> A quelle période votre logement a-t-il été construit? </label>

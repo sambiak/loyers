@@ -3,7 +3,7 @@ interface props {
   setSurface: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export function Entree_surface(props: props) {
+export function EntreeSurface(props: props) {
   return (
     <div className = "surface"> 
       <label>La surface de votre logmement (en m²)</label>

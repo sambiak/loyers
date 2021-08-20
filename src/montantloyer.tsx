@@ -3,7 +3,7 @@ interface props {
     setMontant: React.Dispatch<React.SetStateAction<number>>;
   }
   
-  export function Entree_montant(props: props) {
+  export function EntreeMontant(props: props) {
     return (
       <div className = "loyer">
         <label>Montant de votre loyer actuel (Charges non comprises)</label>

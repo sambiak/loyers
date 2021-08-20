@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React, { useState } from "react";
 import jsPDF from "jspdf";
 import ReactDOMServer from "react-dom/server";
